@@ -24,7 +24,7 @@ int main(void)
 	// 【参照キャプチャの場合】
 	//    ラムダ式実行時の init の値が参照されるので、ラムダ式内の init は 0
 	int result_ref = g(2, 4);
-	std::cout << result_ref << std::endl;   // 8
+	std::cout << result_ref << std::endl;   // 10
 
 	auto func1 = [](int x) -> int { return x * x; };  // int を引数とする
 	auto func2 = []() -> int { return 400; };         // 引数なし
